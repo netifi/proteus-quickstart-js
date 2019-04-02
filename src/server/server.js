@@ -12,8 +12,8 @@ global.WebSocket = global.WebSocket || require('ws');
 //Run the Hello Service, as-server by default, client subscriber provided in case running as client
 runHello(!runAsClient , console.log);
 
-const http = require('http');
-http
+const https = require('https');
+https
     .createServer(function(req, res) {
         res.write("I'm just waiting for Proteus messages!");
         res.end();

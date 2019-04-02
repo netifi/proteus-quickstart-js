@@ -21,7 +21,13 @@ function runHello(isServer, logFunction){
             accessToken: 'kTBDVtfRBO4tHOnZzSyY5ym2kfY=',
         },
         transport: {
-            url: "ws://localhost:8101/",
+            url: "wss://localhost:8101/",
+            wsCreator: url => {
+                const wsConfig = isServer ? {
+                    rejectUnauthorized: false,
+                } : null;
+                return new WebSocket(url, wsConfig);
+            }
         },
     });
 
