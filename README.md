@@ -1,4 +1,5 @@
 # Proteus Quickstart - JavaScript
+This project has moved to https://github.com/netifi/netifi-quickstart-js
 
 A tutorial on how to use this quickstart can be found on [netifi.com](https://www.netifi.com/getstarted-js).
 
